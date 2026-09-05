@@ -1,0 +1,539 @@
+/*Margenes*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Paletas de colores*/
+:root {
+    --bg-papper: #fbf8f5;
+    --gold-accent: #b89b5e;
+    --pink-soft: #e8b4b8;
+    --text-dark: #4a4441;
+    --font-cursive: 'Great Vibes', cursive;
+    --font-serif: 'Cormorant Garamond', serif;
+    --font-sans: 'Monserrat', sans-serif;
+}
+
+body {
+    /*background-color: #2b2b2b;*/
+    font-family: var(--font-sans);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*Plantilla Vertical*/
+.invitacion-container {
+    width: 100%;
+    max-width: 430px;
+    background-color: var(--bg-papper);
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/*Estilo del Titulo*/
+.invitation-header {
+    padding-top: 40px;
+}
+
+.subtitle {
+    font-family: var(--font-cursive);
+    font-size: 2.5rem;
+    color: var(--gold-accent);
+    text-align: center;
+}
+
+.title {
+    font-family: var(--font-serif);
+    font-size: 3.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+/*Marco para la Foto*/
+.photo-arch-container {
+    margin: 25px auto 15px auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-frame {
+    width: 220px;
+    height: 300px;
+    border-radius: 110px 110px 10px 10px;
+    border: 2px solid var(--gold-accent);
+    padding: 6px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 104px 104px 6px 6px;
+}
+
+/*Texto emotivo*/
+.text-section {
+    padding: 0 20px;
+    margin-bottom: 25px;
+}
+
+.text-content {
+    font-family: var(--font-serif);
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #6a625d;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/*Reproductor de Música*/
+.player-card {
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(184, 155, 94, 0.3);
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin: 10px 20px 30px 20px;
+    backdrop-filter: blur(5px); 
+}
+
+.player-label {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    color: var(--gold-accent);
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 12px;
+}
+
+.player-btn {
+    background: none;
+    border: none;
+    color: var(--gold-accent);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.player-btn:active {
+    transform: scale(0.9);
+}
+
+.btn-play {
+    font-size: 1.6rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid var(--gold-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Barra de Progreso*/
+.progress-bar-container {
+    width: 100%;
+    height: 4px;
+    background-color: #e0d8ce;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: var(--gold-accent);
+    transition: width 0.3s linear;
+}
+
+/* ---Seccion Familiar--- */
+.family-section {
+    margin: 30px 0;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.section-intro {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.family-block {
+    margin-bottom: 20px;
+}
+
+.family-title {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: var(--gold-accent);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.family-names {
+    font-family: var(--font-cursive);
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    line-height: 1.2;
+}
+
+/*Anuncio de Fecha*/
+.event-date.section {
+    margin: 35px 0 20px 0;
+}
+
+.event-heading {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    color: var(--gold-accent);
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.date-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    font-family: var(--font-serif);
+}
+
+.day-name {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.date-number {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-top: 1px solid var(--gold-accent);
+    border-bottom: 1px solid var(--gold-accent);
+    padding: 4px 12px;
+}
+
+.date-number .number {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-accent);
+}
+
+.month-label, .year-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/*Cuenta Regresiva*/
+.countdown-section {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    padding: 20px 10px;
+    margin: 25px 10;
+}
+
+.countdown-title {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    color: var(--gold-accent);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 55px;
+}
+
+.time-box span{
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #4a5d4e;
+}
+
+.time-box small{
+    font-size: 0.55rem;
+    letter-spacing: 1px;
+    color: var(--text-dark);
+    margin-top: 2px;
+}
+
+.time-dots {
+    font-size: 1.5rem;
+    color: var(--gold-accent);
+    margin-bottom: 12px;
+}
+
+/*UBICAIONES*/
+.location-section {
+    margin: 30px 0;
+    padding: 0 10px;
+}
+
+.location-card {
+    background: rgb(255, 255, 255, 0.5);
+    border-radius: 12px;
+    padding: 20px 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.location-icon {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.location-title {
+    font-family: var(--font-cursive);
+    font-size: 2.2rem;
+    color: var(--gold-accent);
+    font-weight: 400;
+}
+
+.location-time {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 5px 0;
+}
+
+.location-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-dark);
+}
+
+.location-address {
+    font-size: 0.7rem;
+    color: #7a726d;
+    margin-bottom: 15px;
+}
+
+/*Boton estilo dorado con sombra*/
+.map-btn {
+    display: inline-block;
+    background-color: var(--gold-accent);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(184, 155, 94, 0.3);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.map-btn:active {
+    transform: scale(0.95);
+    background-color: #a0844d;
+}
+
+/*Foto Intermedia con bordes desvanecidos*/
+.middle-photo-container {
+    margin: 30px auto;
+    width: 90%;
+}
+
+.photo-card-soft {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.middle-photo {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/*Itinerario*/
+.itinerary-section {
+    margin: 40px 0;
+    position: relative;
+}
+
+.itinerary-title {
+    font-family: var(--font-cursive);
+    font-size: 2.5rem;
+    color: var(--gold-accent);
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.time-line {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/*Linea vertical dorada central*/
+.time-line::before {
+    content: ´´;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 50%;
+    width: 2px;
+    background-color: var(--gold-accent);
+    transform: translateY(-50%);
+    opacity: 0.6;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.timeline-time {
+    width: 40%;
+    text-align: right;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    padding-right: 15px;
+}
+
+/*Punto indicador en la linea*/
+.timeline-dot {
+    width: 10px;
+    height: 10px;
+    background-color: var(--gold-accent);
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 0 3px var(--bg-papper);
+}
+
+.timeline-content {
+    width: 40%;
+    text-align: left;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.activity-icon {
+    font-size: 1rem;
+}
+
+.timeline-content p {
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+/*Confirmacion via Whats App*/
+.rsvp-section {
+    margin: 40px 0 20px 0;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.rsvp-icon {
+    font-size: 1.5rem;
+}
+
+.rsvp-title {
+    font-family: var(--font-cursive);
+    font-size: 2.2rem;
+    color: var(--gold-accent);
+    font-weight: 400;
+}
+
+.rsvp-deadline {
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+    color: var(--text-dark);
+    margin: 10px 0 20px 0;
+}
+
+.rsvp-btn {
+    background-color: var(--gold-accent);
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(184, 155, 94, 0.3);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.rsvp-btn:active {
+    transform: scale(0.95);
+    background-color: #a0844d;
+}
+
+.rsvp-note {
+    font-size: 0.65rem;
+    color: #7a726d;
+    margin-top: 25px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+.closing-phrase {
+    font-family: var(--font-cursive);
+    font-size: 2.5rem;
+    color: var(--gold-accent);
+    margin-top: 15px;
+}
+
+/*Foto de Pie de Pagina*/
+.footer-photo-container {
+    margin-top: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+.footer-photo {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+

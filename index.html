@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitacion XV</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Fuentes de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@0;400;0,600;1,400&family=Great+Vibes&family=Monserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!--Encabezado-->
+    <main class="Invitation-container">
+        <!--Secciones-->
+        <header class="Invitation-header">
+            <p class="subtitle">XV Años</p>
+            <h1 class="title">Nombre</h1>
+        </header>
+        <!--Marco con Fotografia-->
+        <section class="photo-arch-container">
+            <div class="photo-frame">
+                <img src="" alt="FOTO" class="photo">
+            </div>
+        </section>
+        <!--Texto emotivo-->
+        <section class="text-section">
+            <p class="text-content">"Hay momentos inolvidables que se atesoran con el corazon para siempre.<br>
+                Por esa razon, con la alegria y emocion, quiero compartir contigo esta noche maravillosa
+                celebrando juntos este momento tan especial."
+            </p>
+        </section>
+        <!--Reproductor de Música-->
+        <section class="player-card">
+            <p class="player-title">DALE PLAY</p>
+            <!--Etiqueta de audio(desde JS)-->
+            <audio id="bg-music" loop>
+            <!--Audio-->
+                <source src="music.mp3" type="audio/mpeg">
+            </audio>
+            <!--Controles del reproductor-->
+            <div class="player-controls">
+                <button class="player-btn" id="btn-prev" aria-label="Anterior">↞</button>
+                <button class="player-btn" id="btn-play" aria-label="Reproducir/Pausar">▶</button>
+                <button class="player-btn" id="btn-next" aria-label="Siguiente">↠</button>
+            </div>
+            <!--Barra de progreso-->
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </section>
+        <!--Padres y Padrinos-->
+        <section class="family-section">
+            <!--Datos-->
+            <p class="section-intro">ACOMPAÑAME EN ESTE DIA TAN ESPECIAL JUNTO A</p>
+            <div class="family-block">
+                <h3 class="family-title">MIS PADRES</h3>
+                <p class="family-names">Israel Ramirez Vazques<br>Claudia Garcia</p>
+            </div>
+            <div class="family-block">
+                <h3 class="family-title">MIS PADRINOS</h3>
+                <p class="family-names">Juan Ramirez<br>Maria Vazquez</p>
+            </div>
+        </section>
+        <!--Datos del Evento-->
+        <section class="event-date-section">
+            <h2 class="event-heading">A FERSTEJAR MIS<br>XV AÑOS</span></h2>
+
+            <div class="date-badge">
+                <span class="date-name">SABADO</span>
+                <div class="date-number">
+                    <span class="month-label">Diciembre</span>
+                    <span class="number">23</span>
+                    <span class="year-label">2026</span>
+                </div>
+            </div>
+        </section>
+        <!--Reloj de Cuenta Regresiva-->
+        <section class="countdown-section">
+            <p class="countdown-title">FALTAN</p>
+
+            <div class="countdown-timer">
+                <div class="time-box">
+                    <span  id="days">00</span>
+                    <small">Días</small>
+                </div>
+                    <span class="time-dots"">:</span>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>Horas</small>
+                </div>
+                <span class="time-dots">:</span>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <small>Minutos</small>
+                </div>
+                <span class="time-dots">:</span>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <small>Segundos</small>
+                </div>
+            </div>
+        </section>
+        <!--Misa y Recepcion-->
+        <section class="locations-section">
+            <!--Misa-->
+            <div class="location-card">
+                <div class="location-icon">⛪</div>
+                <h3 class="location-title">Misa de Agradecimiento</h3>
+                <p class="location-time">6:OO PM</p>
+                <p class="location-name">Parroquia de la Inmaculada Concepcion</p>
+                <p class="location-address">Zona Centro, 34900 Súchil, Dgo.</p>
+
+                <!--Enlace a Google Maps-->
+                <a href="https://maps.app.goo.gl/JCmk7ooAB1yeYGAh7?g_st=aw" target="_blank" class="map-btn">
+                    📍VER UBICACIÓN
+                </a>
+            </div>
+            <!--Separador Floral o Espaciado-->
+            <div class="section-divider"></div>
+
+            <!--Bloque de Recepcion-->
+            <div class="location-card">
+                <div class="location-icon">🥂</div>
+                <h3 class="location-title">RECEPCION</h3>
+                <p class="location-time">7:00 PM</p>
+                <p class="location-name">SALÓN CASA GRANDE</p>
+                <p class="location-address">Calle M. Abasolo</p>
+                
+                <!--Enlace a Google Maps-->
+                <a href="https://maps.app.goo.gl/SFwLjucCp97cGaVz6?g_st=aw" target="_blank" class="map-btn">
+                    📍VER UBICACIÓN
+                </a>
+            </div>
+        </section>
+        <!--Fotografia de Transicion-->
+        <section class="middle-photo-container">
+            <div class="photo-card-soft">
+                <img src="" alt="FOTO" class="middle-photo">
+            </div>
+        </section>
+        <!--Itinerario de Actividades-->
+        <section class="itinerary-section">
+            <h2 class="itinerary-title">Itinerario de Actividades</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline-time">5:30 PM</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="activity-icon">🚪</span>
+                        <p>LLEGADA</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline-time">6:00 PM</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="activity-icon">🍽️</span>
+                        <p>COMIDA</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline-time">7:00 PM</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="activity-icon">💃</span>
+                        <p>VALS</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline-time">8:00 PM</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="activity-icon">🥂</span>
+                        <p>BRINDIS</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline-time">8:30 PM</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="activity-icon">🪩</span>
+                        <p>BAILE</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Confirmacion de Asistencia-->
+        <section class="rsvp-section" data-aos="zoom-in">
+            <div class="rsvp-icon">🗓️</div>
+            <h3 class="rsvp-title">Confirmar Asistencia</h3>
+            <p class="rsvp-deadline">POR FAVOR CONFIRMA TU ASISTENCIA</p>
+
+            <!--Boton de Whats App-->
+            <button class="rsvp-btn" id="btn-rsvp">
+                CONFIRMAR AQUI
+            </button>
+
+            <p class="rsvp-note">
+                TU PRESENCIA Y ALEGRIA HARÁ QUE ESTA NOCHE SEA INOLVIDABLE.
+            </p>
+
+            <p class="closing-phrase">¡Te Esperamos!</p>
+        </section>
+
+        <!--Fotografia final-->
+        <section class="footer-photo-container" data-aos="fade-up" data-aos-duration="1000">
+            <img src="" alt="FOTO" class="footer-photo">
+        </section>
+
+        
+
+    </main>
+    <!--Archivos de JavaScript-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
