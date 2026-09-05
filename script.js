@@ -83,7 +83,7 @@ setInterval(updateCountdown, 1000);
 // --- CONFIRMACIÓN VÍA WHATSAPP (RSVP) ---
     const rsvpBtn = document.getElementById("btn-rsvp");
     const phoneNumber = "+526751135255"; // Número de teléfono real con código de país
-    const customMessage = encodeURIComponent("¡Hola! Confirmo mi asistencia a la celebración de los XV Años de Ximena. ✨");
+    const customMessage = encodeURIComponent("¡Hola! Confirmo mi asistencia a la celebración de los XV Años de Dayana. ✨");
 
     rsvpBtn.addEventListener("click", () => {
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${customMessage}`;
